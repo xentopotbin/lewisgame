@@ -1,7 +1,6 @@
 
  /*
    Play a 2x2 Lewis signaling game!
-   This version reports success rate via an Adafruit SSD1306 display
 
    Function for reading & debouncing the buttons adapted from Adafruit:
    https://blog.adafruit.com/2009/10/20/example-code-for-multi-button-checker-with-debouncing/
@@ -215,8 +214,6 @@ void loop() {
  }
 
  //Update a display
- //will this work?  still needs testing
- // "passing by reference "
  void update_display(LiquidCrystal_I2C &lcd) {
    lcd.clear();             //clear display
    lcd.setCursor(0,0);      //1st row 1st column
